@@ -1,0 +1,122 @@
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #1e293b;
+    position: sticky;
+    top: 0;
+}
+
+header h2 {
+    color: #38bdf8;
+    font-size: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Common Section Styling */
+section {
+    padding: 55px 8%;
+    min-height: auto;
+}
+
+/* Home Section */
+#home {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#home h1 {
+    font-size: 48px;
+    color: #38bdf8;
+}
+
+#home h2 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+#home p {
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+/* Contact Button */
+#home a {
+    background-color: #38bdf8;
+    color: #0f172a;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section Headings */
+section h2 {
+    color: #38bdf8;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* Mobile Friendly */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin-left: 0;
+    }
+
+    #home h1 {
+        font-size: 34px;
+    }
+
+    #home h2 {
+        font-size: 24px;
+    }
+
+    section {
+        padding: 70px 6%;
+    }
+}
